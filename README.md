@@ -3,7 +3,7 @@ Regular **Markdown** here.
 ![[firstDiagram.png]]
 <details>
 
-```
+```mermaid
 @startuml firstDiagram
 
 Alice -> Bob: Hello
