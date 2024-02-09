@@ -8,3 +8,4 @@ Bob -> Alice: Hi!
 	
 @enduml
 -->
+![](firstDiagram.svg)
