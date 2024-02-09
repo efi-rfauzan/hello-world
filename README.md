@@ -1,6 +1,8 @@
 Regular **Markdown** here.
 
-<div hidden>
+![[firstDiagram.png]]
+<details>
+
 ```
 @startuml firstDiagram
 
@@ -9,8 +11,7 @@ Bob -> Alice: Hi!
 		
 @enduml
 ```
-</div>
 
-![](firstDiagram.svg)
+</details>
 
 Some more markdown.
