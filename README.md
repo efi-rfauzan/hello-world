@@ -4,6 +4,7 @@ Regular **Markdown** here.
 <details>
 
 ```mermaid
+graph TD;
 Alice -> Bob: Hello
 Bob -> Alice: Hi!
 ```
