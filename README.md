@@ -4,12 +4,8 @@ Regular **Markdown** here.
 <details>
 
 ```mermaid
-@startuml firstDiagram
-
 Alice -> Bob: Hello
 Bob -> Alice: Hi!
-		
-@enduml
 ```
 
 </details>
