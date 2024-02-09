@@ -1,7 +1,7 @@
 
 ```mermaid
 flowchart LR;
-linkStyle 1 color:blue;
+linkStyle color:blue;
 Internal --> Egress -.-> Internet;
 ```
 
