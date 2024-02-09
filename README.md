@@ -1,14 +1,8 @@
-Regular **Markdown** here.
-
-![[firstDiagram.png]]
-<details>
 
 ```mermaid
-graph TD;
-Alice --> Bob;
-Bob --> Alice;
+flowchart LR;
+linkStyle 1,2 color:blue;
+Internal --> Egress -.-> Internet;
 ```
-
-</details>
 
 Some more markdown.
