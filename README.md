@@ -5,8 +5,8 @@ Regular **Markdown** here.
 
 ```mermaid
 graph TD;
-Alice -> Bob: Hello;
-Bob -> Alice: Hi!;
+Alice --> Bob: Hello;
+Bob --> Alice: Hi!;
 ```
 
 </details>
