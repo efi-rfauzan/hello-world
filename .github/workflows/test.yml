@@ -11,8 +11,8 @@ jobs:
   Toast:
     name: test
     if: |
-      github.event_name == "push" &&
-      github.ref_name == "main"
+      github.event_name == 'push' &&
+      github.ref_name == 'main'
     runs-on: ubuntu-22.04
     steps:
       - run: echo "${{ github.event_name }}"
