@@ -21,12 +21,12 @@ jobs:
       - run: echo "${{ github.event_name }}"
       - run: echo "Hello from the ${{ github.ref_name }}"
       - run: echo "hello world tfplan" >> tfplan
-      - run: ls -la && ls -la tfplan
+      - run: ls -la
       - uses: actions/upload-artifact@v3
         with:
           name: ${{ github.run_id }}-tf-plan
           path: tfplan
-      - run: ls -la && ls -la tfplan
+      - run: ls -la
 
   test-pr:
     name: test pull request
@@ -35,10 +35,11 @@ jobs:
     steps:
       - run: echo "${{ github.event_name }}"
       - run: echo "Hello from the ${{ github.ref_name }}"
-      - run: ls -la && ls -la tfplan
+      - run: ls -la
       - uses: actions/download-artifact@v3
         with:
           name: ${{ github.run_id }}-tf-plan
           path: tfplan
-      - run: ls -la && ls -la tfplan
+      - run: ls -la
+      - run: ls -la tfplan
       - run: cat tfplan
