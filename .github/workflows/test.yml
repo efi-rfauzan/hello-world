@@ -39,7 +39,7 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: ${{ github.run_id }}-tf-plan
-          path: tfplan
+          path: .
       - run: ls -la
       - run: ls -la tfplan
       - run: cat tfplan
