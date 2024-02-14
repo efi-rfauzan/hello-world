@@ -1,0 +1,16 @@
+name: Test
+on: 
+  push:
+    branches: 
+      - 'main'
+
+permissions:
+  contents: read
+
+jobs: 
+  Toast:
+    name: test
+    runs-on: ubuntu-22.04
+    steps:
+      - run: echo "${{ github.event_name }}"
+      - run: echo "${{ github.ref_name }}"
