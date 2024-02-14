@@ -28,6 +28,7 @@ jobs:
 
   test-pr:
     name: test pull request
+    needs: test-main
     runs-on: ubuntu-22.04
     steps:
       - run: echo "${{ github.event_name }}"
