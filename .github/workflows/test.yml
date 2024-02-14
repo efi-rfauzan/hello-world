@@ -37,4 +37,6 @@ jobs:
         with:
           name: ${{ github.run_id }}-tf-plan
           path: tfplan
+      - run: |
+          ls -la && ls -la tfplan
       - run: cat tfplan
