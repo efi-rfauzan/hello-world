@@ -10,7 +10,12 @@ permissions:
 jobs: 
   Toast:
     name: test
+    if: |
+      ${{
+        github.event_name == "push" &&
+        github.ref_name == "main"
+      }}
     runs-on: ubuntu-22.04
     steps:
       - run: echo "${{ github.event_name }}"
-      - run: echo "${{ github.ref_name }}"
+      - run: echo "Hello from the ${{ github.ref_name }}"
