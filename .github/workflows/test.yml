@@ -3,16 +3,26 @@ on:
   push:
     branches: 
       - 'main'
+  pull_request:
+    branches:
+      - 'main'
 
 permissions:
   contents: read
 
 jobs: 
-  Toast:
-    name: test
+  test-main:
+    name: test main
     if: |
       github.event_name == 'push' &&
       github.ref_name == 'main'
+    runs-on: ubuntu-22.04
+    steps:
+      - run: echo "${{ github.event_name }}"
+      - run: echo "Hello from the ${{ github.ref_name }}"
+
+  test-pr:
+    name: test pull request
     runs-on: ubuntu-22.04
     steps:
       - run: echo "${{ github.event_name }}"
